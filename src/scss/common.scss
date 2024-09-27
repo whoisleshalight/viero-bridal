@@ -1,1 +1,28 @@
 // Заголовки, загальні БЕМ блоки та інше...
+._btn {
+	padding: toRem(8) toRem(20);
+	border-radius: toRem(2);
+	font-size: toRem(16);
+	font-weight: 500;
+	min-height: toRem(40);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+
+	&._light {
+		color: $mainColor;
+		background-color: $whiteColor;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $whiteColor;
+				background-color: $mainColor;
+			}
+		}
+	}
+
+	&._dark {}
+
+	&._fw {}
+}

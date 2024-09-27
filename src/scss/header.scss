@@ -5,6 +5,11 @@
 	position: relative;
 	z-index: 100;
 	background-color: $whiteColor;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
 
 	&__container {}
 
@@ -137,6 +142,13 @@
 					transition: all 0.4s;
 					opacity: 0;
 					visibility: hidden;
+				}
+
+				&._active {
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
 				}
 
 				@media (any-hover: hover) {

@@ -48,4 +48,20 @@ addEventListener("DOMContentLoaded", (event) => {
 
 	}
 
+	const video = document.querySelector('.main__video');
+	const videoPlayBtn = document.querySelector('.video-play');
+	const videoStopBtn = document.querySelector('.video-stop');
+	if (videoPlayBtn && video && videoStopBtn) {
+		videoPlayBtn.addEventListener("click", function (e) {
+			video.play();
+			document.documentElement.classList.add('_video-play');
+		});
+		videoStopBtn.addEventListener("click", function (e) {
+			video.pause();
+			if (document.documentElement.classList.contains('_video-play')) {
+				document.documentElement.classList.remove('_video-play')
+
+			}
+		});
+	}
 });
