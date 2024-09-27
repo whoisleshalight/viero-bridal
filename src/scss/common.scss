@@ -17,7 +17,7 @@
 		@media (any-hover: hover) {
 			&:hover {
 				color: $whiteColor;
-				background-color: $mainColor;
+				background-color: $bigLightGrayColor1;
 			}
 		}
 	}
@@ -48,13 +48,15 @@
 
 	&:not(:last-child) {
 		margin-bottom: toRem(12);
+		@include adaptiveValue("margin-bottom", 12, 8, 0, 1328, 375);
 	}
 }
 
 ._subtitle {
-	font-size: toRem(20);
 	text-align: center;
 	line-height: 140%;
+	@include adaptiveValue("font-size", 20, 18, 0, 1328, 375);
+
 }
 
 .actions {

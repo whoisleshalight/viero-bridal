@@ -136,8 +136,10 @@
 
 .info-gallery__slider {
 	max-width: toRem(840);
-	margin: toRem(40) auto 0 auto;
+	margin-right: auto;
+	margin-left: auto;
 	overflow: visible !important;
+	@include adaptiveValue("margin-top", 40, 24, 0, 1328, 375);
 
 	// .info-gallery__slide.swiper-slide-active {
 	// 	opacity: 1;
@@ -154,14 +156,15 @@
 
 	&__title {
 		font-family: 'belgant';
-		font-size: toRem(32);
 		line-height: 120%;
-		margin-bottom: toRem(16);
+		@include adaptiveValue("margin-bottom", 16, 12, 0, 1328, 375);
+		@include adaptiveValue("font-size", 32, 24, 0, 1328, 375);
 	}
 
 	&__info {
-		font-size: toRem(20);
 		line-height: 140%;
+
+		@include adaptiveValue("font-size", 20, 18, 0, 1328, 375);
 	}
 
 	&__actions {
@@ -255,6 +258,10 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center top;
+
+		@media (max-width:$mobile) {
+			object-position: left top;
+		}
 	}
 
 	&__container {
@@ -405,9 +412,18 @@
 }
 
 .item-book {
+	@media (any-hover: hover) {
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
 
 	&__image {
 		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
 
 		@include adaptiveValue("width", 200, 88, 0, 1328, 375);
 		@include adaptiveValue("height", 200, 88, 0, 1328, 375);
@@ -420,11 +436,12 @@
 		img {
 			position: absolute;
 			top: 0;
+			will-change: transform;
+			transition: all 0.4s;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			border-radius: 50%;
 		}
 	}
 

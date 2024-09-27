@@ -28,6 +28,7 @@
 .header-actions__search {
 	svg {
 		transition: all 0.4s;
+		will-change: transform;
 	}
 
 	@media (any-hover: hover) {
