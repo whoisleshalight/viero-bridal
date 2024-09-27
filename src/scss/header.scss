@@ -1,0 +1,153 @@
+.header {
+	padding-top: toRem(24);
+	padding-bottom: toRem(24);
+	border-bottom: 1px solid $bigLightGrayColor;
+	position: relative;
+	z-index: 100;
+	background-color: $whiteColor;
+
+	&__container {}
+
+	&__top {
+		&:not(:last-child) {
+			@media (min-width:$mobile) {
+				margin-bottom: toRem(24);
+
+			}
+		}
+	}
+
+	&__menu {}
+}
+
+.header-actions__search {
+	svg {
+		transition: all 0.4s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
+
+.top-header {
+	display: flex;
+	align-items: center;
+
+	&__box {
+		flex: 0 1 50%;
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+		position: relative;
+		z-index: 100;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 100;
+		flex: 0 0 toRem(186);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			@include adaptiveValue("width", 186, 124, 0, 1328, 375);
+		}
+	}
+
+	&__actions {
+		position: relative;
+		z-index: 100;
+		flex: 0 1 50%;
+	}
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: toRem(16);
+
+	button,
+	a {
+		position: relative;
+
+		span {
+			position: absolute;
+			top: toRem(-6);
+			right: toRem(-6);
+			width: toRem(16);
+			height: toRem(16);
+			border-radius: 50%;
+			background-color: $redColor;
+			display: flex;
+			font-size: toRem(8);
+			justify-content: center;
+			align-items: center;
+			color: $whiteColor;
+		}
+
+		svg {
+			object-fit: contain;
+			@include adaptiveValue("width", 24, 20, 0, 1328, 375);
+			@include adaptiveValue("height", 24, 20, 0, 1328, 375);
+		}
+	}
+
+	&__search {}
+
+	&__wishlist {}
+}
+
+.menu {
+
+	&__icon {}
+
+	&__body {}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: toRem(54);
+		flex-wrap: wrap;
+
+		li {
+			a {
+				white-space: nowrap;
+				line-height: 150%;
+				position: relative;
+				font-weight: 500;
+
+				&::before {
+					content: '';
+					height: toRem(4);
+					width: 100%;
+					position: absolute;
+					left: 0;
+					bottom: toRem(-24);
+					background-color: $mainColor;
+					border-top-left-radius: toRem(2);
+					border-top-right-radius: toRem(2);
+					transition: all 0.4s;
+					opacity: 0;
+					visibility: hidden;
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						&::before {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+}
