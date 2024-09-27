@@ -26,7 +26,10 @@ addEventListener("DOMContentLoaded", (event) => {
 				if (document.documentElement.classList.contains('open-search')) {
 					document.documentElement.classList.remove('open-search');
 					if (document.documentElement.classList.contains('lock')) {
-						document.documentElement.classList.remove('lock');
+						if (!document.documentElement.classList.contains('menu-open')) {
+							document.documentElement.classList.remove('lock');
+
+						}
 
 					}
 				}
@@ -39,7 +42,10 @@ addEventListener("DOMContentLoaded", (event) => {
 					// Check if resultSearchBox does not have the _active class
 					if (!resultSearchBox.classList.contains('_active')) {
 						document.documentElement.classList.remove('open-search');
-						document.documentElement.classList.remove('lock');
+						if (!document.documentElement.classList.contains('menu-open')) {
+
+							document.documentElement.classList.remove('lock');
+						}
 					}
 				}
 			}
