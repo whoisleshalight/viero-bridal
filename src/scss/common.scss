@@ -22,7 +22,36 @@
 		}
 	}
 
-	&._dark {}
+	&._dark {
+		color: $whiteColor;
+		background-color: $mainColor;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $whiteColor;
+				background-color: $bigLightGrayColor1;
+			}
+		}
+	}
 
 	&._fw {}
+}
+
+
+._title {
+	text-align: center;
+	font-size: toRem(64);
+	line-height: 120%;
+	font-family: 'belgant';
+
+
+	&:not(:last-child) {
+		margin-bottom: toRem(12);
+	}
+}
+
+._subtitle {
+	font-size: toRem(20);
+	text-align: center;
+	line-height: 140%;
 }
