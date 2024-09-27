@@ -40,10 +40,11 @@
 
 ._title {
 	text-align: center;
-	font-size: toRem(64);
+
 	line-height: 120%;
 	font-family: 'belgant';
 
+	@include adaptiveValue("font-size", 64, 36, 0, 1328, 375);
 
 	&:not(:last-child) {
 		margin-bottom: toRem(12);
@@ -54,4 +55,10 @@
 	font-size: toRem(20);
 	text-align: center;
 	line-height: 140%;
+}
+
+.actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
