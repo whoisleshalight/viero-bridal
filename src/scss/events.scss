@@ -22,3 +22,31 @@
 		@include adaptiveValue("margin-bottom", 104, 64, 0, 1328, 375);
 	}
 }
+.cart__date {
+	font-weight: 500;
+	font-size: toRem(14);
+	margin-top: toRem(12);
+}
+.item-events__info {
+	margin-top: toRem(12);
+}
+.cart-static {
+	img {
+		transition: all 0.4s;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			.cart__title {
+				text-decoration: underline;
+			}
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+.item-events__info {
+	white-space: nowrap; /* Запретить перенос строк */
+	overflow: hidden; /* Скрыть переполняющий текст */
+	text-overflow: ellipsis;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Wishlist"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_search.htm',{})
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="wishlist">
+					<div class="wishlist__container">
+						<h1 class="wishlist__title _title">Wishlist</h1>
+						<div class="wishlist__none none-wishlist">
+							<div class="none-wishlist__picture">
+								<img src="@img/wishlist/01.png" alt="Wishlist image">
+							</div>
+							<div class="none-wishlist__body">
+								<h2 class="none-wishlist__title">Your wishlist is empty</h2>
+								<p class="none-wishlist__info">Discover our dresses in collections and add it to your list</p>
+								<p class="none-wishlist__action">
+									<a class="_btn _dark" href="#">Discover</a>
+								</p>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

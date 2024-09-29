@@ -129,11 +129,9 @@ body::-webkit-scrollbar {
 }
 .cart__info {
 	line-height: 150%;
-	@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	margin-top: toRem(8);
 
-	&:not(:last-child) {
-		margin-top: toRem(8);
-	}
+	@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
 }
 .cart__wishlist {
 	position: absolute;
