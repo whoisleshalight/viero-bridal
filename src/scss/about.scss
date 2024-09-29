@@ -1,0 +1,164 @@
+.about {
+	margin-top: toRem(124);
+	padding-top: toRem(40);
+	padding-bottom: toRem(40);
+	@media (max-width: $mobile) {
+		margin-top: toRem(74);
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap", 64, 40, 0, 1328, 375);
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__body {
+		@media (min-width: $mobile) {
+			flex: 0 0 41.642%;
+		}
+	}
+
+	&__title {
+		text-align: left;
+	}
+
+	&__info {
+		line-height: 120%;
+		font-weight: 500;
+		@include adaptiveValue("font-size", 20, 18, 0, 1328, 375);
+		@include adaptiveValue("margin-bottom", 8, 4, 0, 1328, 375);
+	}
+
+	&__subinfo {
+		line-height: 150%;
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+
+	&__pictures {
+		flex: 1 1 auto;
+		position: relative;
+		border-radius: toRem(4);
+		overflow: hidden;
+		padding-bottom: 55.723%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding-bottom: 122.326%;
+		}
+	}
+}
+.about .about__body .about__title._title {
+	@include adaptiveValue("margin-bottom", 24, 16, 0, 1328, 375);
+}
+//========================================================================================================================================================
+.vision {
+	background-color: $mainColor;
+	color: $whiteColor;
+	padding-top: toRem(80);
+	padding-bottom: toRem(80);
+	&__container {
+		display: flex;
+		align-items: center;
+		text-align: left;
+		@include adaptiveValue("gap", 64, 10, 0, 1328, 375);
+		@media (max-width: $mobile) {
+			gap: toRem(64);
+			flex-direction: column;
+		}
+	}
+
+	&__pictures {
+		position: relative;
+		padding-bottom: 55.723%;
+		@media (min-width: $mobile) {
+			flex: 0 0 50.302%;
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding-bottom: 110.723%;
+		}
+	}
+
+	&__image-01 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 55.69%;
+		height: 73.65%;
+		object-fit: cover;
+	}
+
+	&__image-02 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 55.69%;
+		height: 73.65%;
+		object-fit: cover;
+		z-index: 3;
+	}
+
+	&__body {
+		flex: 1 1 auto;
+	}
+
+	&__title {
+		text-align: left;
+		margin-bottom: toRem(8) !important;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(10);
+		line-height: 150%;
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+}
+//========================================================================================================================================================
+
+.selection {
+	display: flex;
+	position: relative;
+	&__info {
+		display: flex;
+		justify-content: flex-end;
+		flex: 1 1 auto;
+		padding-right: toRem(64);
+		padding-left: toRem(80);
+		padding-top: toRem(283);
+		padding-bottom: toRem(283);
+		p {
+			font-size: toRem(24);
+			display: block;
+			// max-width: toRem(600);
+		}
+	}
+	.selection__stycky {
+		flex: 0 0 50%;
+		position: sticky;
+		top: 0;
+		height: 100vh;
+	}
+	&__pictures {
+		height: 100vh;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

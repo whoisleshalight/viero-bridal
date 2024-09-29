@@ -1,0 +1,24 @@
+.events {
+	margin-top: toRem(124);
+	@include adaptiveValue("padding-top", 80, 40, 0, 1328, 375);
+	@include adaptiveValue("padding-bottom", 80, 64, 0, 1328, 375);
+	@media (max-width: $mobile) {
+		margin-top: toRem(74);
+	}
+}
+.events__title._title {
+	@include adaptiveValue("margin-bottom", 32, 16, 0, 1328, 375);
+}
+.item-events__date {
+	border-top: 1px solid #e2e2e2;
+	text-align: center;
+	line-height: 150%;
+	@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	@include adaptiveValue("padding-top", 24, 16, 0, 1328, 375);
+	@include adaptiveValue("margin-bottom", 40, 32, 0, 1328, 375);
+}
+.item-events {
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 104, 64, 0, 1328, 375);
+	}
+}

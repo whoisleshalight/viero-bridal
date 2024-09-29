@@ -2,7 +2,8 @@
 .footer {
 	background-color: $whiteColor;
 
-	&__container {}
+	&__container {
+	}
 
 	&__body {
 		display: flex;
@@ -23,9 +24,11 @@
 		}
 	}
 
-	&__nav {}
+	&__nav {
+	}
 
-	&__bottom {}
+	&__bottom {
+	}
 }
 
 .nav-footer {
@@ -59,11 +62,15 @@
 					height: toRem(24);
 					object-fit: contain;
 				}
+				@media (any-hover: hover) {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 
 		@include adaptiveValue("gap", 24, 12, 0, 1328, 375);
-
 	}
 
 	&__title {
@@ -72,14 +79,11 @@
 
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 24, 16, 0, 1328, 375);
-
 		}
 	}
 }
 
 .bottom-footer {
-
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -88,7 +92,7 @@
 	@include adaptiveValue("padding-top", 24, 25, 0, 1328, 375);
 	@include adaptiveValue("padding-bottom", 35, 32, 0, 1328, 375);
 
-	@media (max-width:$mobileSmall) {
+	@media (max-width: $mobileSmall) {
 		flex-direction: column-reverse;
 		align-items: flex-start;
 	}
@@ -109,7 +113,15 @@
 				svg {
 					width: toRem(24);
 					height: toRem(24);
+					transition: all 0.4s;
 					object-fit: contain;
+				}
+				@media (any-hover: hover) {
+					&:hover {
+						svg {
+							transform: scale(1.1);
+						}
+					}
 				}
 			}
 		}

@@ -32,6 +32,9 @@ addEventListener("DOMContentLoaded", (event) => {
 						}
 
 					}
+					if(resultSearchBox.classList.contains('_active')){
+						resultSearchBox.classList.remove('_active');
+					}
 				}
 			});
 		}

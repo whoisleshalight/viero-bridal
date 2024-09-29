@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Product page"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_search.htm',{})
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__box">
+						<div class="hero__slider">
+							<!-- Оболонка слайдера -->
+							<div class="hero__slider-swiper swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div class="hero__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="hero__slide swiper-slide slide-hero">
+										<div class="slide-hero__picture">
+											<img src="@img/product/hero/01.jpg" alt="Hero image">
+										</div>
+									</div>
+									<div class="hero__slide swiper-slide slide-hero">
+										<div class="slide-hero__picture">
+											<img src="@img/product/arrival/01.jpg" alt="Hero image">
+										</div>
+									</div>
+									<div class="hero__slide swiper-slide slide-hero">
+										<div class="slide-hero__picture">
+											<img src="@img/product/arrival/02.jpg" alt="Hero image">
+										</div>
+									</div>
+								</div>
+								<div class="hero-pagination"></div>
+							</div>
+						</div>
+						<div class="hero__body">
+							<div class="hero__bread bread">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M19.6585 9.70128L12.6585 3.57628C12.2815 3.24638 11.7185 3.24638 11.3415 3.57628L4.3415 9.70128C4.12448 9.89117 4 10.1655 4 10.4539V19.0001C4 19.5524 4.44772 20.0001 5 20.0001H19C19.5523 20.0001 20 19.5524 20 19.0001V10.4539C20 10.1655 19.8755 9.89117 19.6585 9.70128Z"
+													stroke="black" stroke-width="1.5" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li><a href="#">Collections</a></li>
+									<li><a href="#">Sand Drops</a></li>
+									<li><a href="#">Altan</a></li>
+								</ul>
+							</div>
+							<div class="hero__top top-hero">
+								<div class="top-hero__head">
+									<h1 class="top-hero__title _title">Altan</h1>
+									<a href="#" class="top-hero__wishlist">
+										<!-- _active -->
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12 20C12 20 3 14.9875 3 8.97234C3 2.95722 10 2.45597 12 7.16221C14 2.45597 21 2.95722 21 8.97234C21 14.9875 12 20 12 20Z"
+												stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</div>
+								<p class="top-hero__info">A vision of modern sophistication, the Altan gown combines sleek lines
+									with luxurious satin fabric for a refined, minimalistic look. The structured bodice flatters
+									every silhouette, while the delicate buttons trailing down the back add a timeless touch of
+									elegance.</p>
+								<div class="top-hero__colors">
+									<span class="top-hero__colors-title">Color  availability</span>
+									<div class="top-hero__colors-box">
+										<a href="#" class="top-hero__color color-top-hero">
+											<div class="color-top-hero__visual _white"><span></span></div>
+											<span class="color-top-hero__info">Off-white</span>
+										</a>
+										<a href="#" class="top-hero__color color-top-hero">
+											<div class="color-top-hero__visual _nude"><span></span></div>
+											<span class="color-top-hero__info">Light nude</span>
+										</a>
+									</div>
+								</div>
+								<div class="top-hero__size size-top-hero">
+									<p class="size-top-hero__title">Size and measurements</p>
+									<p class="size-top-hero__info">Available by size and by custom measurements. Custom changes
+										are welcome</p>
+								</div>
+								<div class="top-hero__actions">
+									<a class="_btn _dark _fw" href="#">Find in store</a>
+								</div>
+
+							</div>
+							<div data-spollers class="spollers">
+								<details class="spollers__item" data-open>
+									<summary class="spollers__title">Description</summary>
+									<div class="spollers__body">Breathtaking off-the-shoulder wedding gown with satin charmeuse
+										long sleeves and a delicate short train. Featuring a corset adorned with glitter and an
+										open back and a short train.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Designer notes</summary>
+									<div class="spollers__body">Breathtaking off-the-shoulder wedding gown with satin charmeuse
+										long sleeves and a delicate short train. Featuring a corset adorned with glitter and an
+										open back and a short train.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Care instructions</summary>
+									<div class="spollers__body">Breathtaking off-the-shoulder wedding gown with satin charmeuse
+										long sleeves and a delicate short train. Featuring a corset adorned with glitter and an
+										open back and a short train.</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="arrivals">
+				<div class="arrivals__container">
+					<h2 class="arrivals__title _title">Our New Arrival</h2>
+					<p class="arrivals__subtitle">Discover the latest in bridal fashion, where timeless elegance meets modern
+						sophistication.</p>
+					<div class="arrivals__items">
+						<div class="arrivals__item item-arrivals">
+							<div class="item-arrivals__picture">
+								<img src="@img/product/arrival/01.jpg" alt="Image">
+							</div>
+							<div class="item-arrivals__info info-item-arrivals">
+								<div class="info-item-arrivals__title">Emilia</div>
+								<div class="info-item-arrivals__info">Sophisticated and timeless, the Emilia dress is a
+									masterpiece of intricate lacework and elegant design. Featuring a figure-hugging silhouette
+									and a dramatic cathedral train, this gown exudes understated glamour. The illusion lace back
+									and subtle beading add an extra touch of luxury, making it ideal for the bride seeking
+									classic elegance with a modern twist.</div>
+								<div class="info-item-arrivals__actions">
+									<a class="_btn _dark" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arrivals__item item-arrivals">
+							<div class="item-arrivals__picture">
+								<img src="@img/product/arrival/02.jpg" alt="Image">
+							</div>
+							<div class="item-arrivals__info info-item-arrivals">
+								<div class="info-item-arrivals__title">Feliz</div>
+								<div class="info-item-arrivals__info">A celebration of romance and grace, the Feliz gown
+									enchants with its soft, flowing layers of chiffon and delicate floral lace appliqués. The
+									sweetheart neckline and fitted bodice flatter the figure, while the cascading skirt creates a
+									dreamy, ethereal silhouette, perfect for the bride who wants to feel like a princess on her
+									wedding day.</div>
+								<divs class="info-item-arrivals__actions">
+									<a class="_btn _dark" href="#">Learn more</a>
+								</divs>
+							</div>
+						</div>
+						<div class="arrivals__item item-arrivals">
+							<div class="item-arrivals__picture">
+								<img src="@img/product/arrival/03.jpg" alt="Image">
+							</div>
+							<div class="item-arrivals__info info-item-arrivals">
+								<div class="info-item-arrivals__title">Flor</div>
+								<div class="info-item-arrivals__info">It`s a modern elegance with its sleek, minimalist design
+									and asymmetric neckline. The structured bodice hugs the figure perfectly, creating a
+									silhouette that is both sophisticated and alluring. The single shoulder detail adds a bold,
+									contemporary twist, while the refined ivory fabric offers an air of timeless luxury. Perfect
+									for the bride who values chic simplicity with a touch of avant-garde flair.</div>
+								<div class="info-item-arrivals__actions">
+									<a class="_btn _dark" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_more.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

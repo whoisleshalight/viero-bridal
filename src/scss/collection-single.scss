@@ -1,0 +1,356 @@
+.hero {
+	margin-top: toRem(124);
+	@include adaptiveValue("padding-top", 32, 24, 0, 1328, 375);
+	@include adaptiveValue("padding-bottom", 88, 64, 0, 1328, 375);
+
+	@media (max-width: $mobile) {
+		margin-top: toRem(74);
+	}
+	&__container {
+	}
+
+	&__box {
+		display: flex;
+		gap: toRem(64);
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			gap: toRem(64);
+		}
+	}
+
+	&__slider {
+		align-self: flex-start;
+		min-width: 0;
+		position: relative;
+		@media (min-width: $tablet) {
+			flex: 0 0 toRem(708);
+			padding-left: toRem(35);
+		}
+		@media (max-width: $tablet) {
+			width: 100%;
+		}
+	}
+
+	&__slider-swiper {
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__body {
+		flex: 1 1 auto;
+	}
+
+	&__bread {
+	}
+
+	&__top {
+	}
+}
+
+.slide-hero {
+	&__picture {
+		position: relative;
+		padding-bottom: 105.202%;
+		overflow: hidden;
+		@include adaptiveValue("border-radius", 16, 8, 0, 1328, 375);
+
+		@media (max-width: $tablet) {
+			padding-bottom: 122.325%;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-position: center top;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.hero-pagination {
+	display: flex;
+	gap: toRem(15);
+	z-index: 4;
+	@media (min-width: $tablet) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		flex-direction: column;
+
+		left: 0;
+	}
+	@media (max-width: $tablet) {
+		margin-top: toRem(32);
+	}
+}
+.swiper-pagination-bullet {
+	transition: all 0.4s;
+	background-color: #e5e5e5;
+	backdrop-filter: blur(toRem(4));
+	border-radius: toRem(100);
+	@media (min-width: $tablet) {
+		height: toRem(32);
+		width: toRem(3);
+	}
+	@media (max-width: $tablet) {
+		height: toRem(3);
+		width: toRem(32);
+	}
+}
+.swiper-pagination-bullet-active {
+	background-color: $mainColor;
+	cursor: default;
+}
+.top-hero {
+	margin-top: toRem(12);
+	@include adaptiveValue("margin-bottom", 40, 32, 0, 1328, 375);
+
+	&__head {
+		display: flex;
+		align-items: center;
+		margin-bottom: toRem(8);
+		gap: toRem(16);
+	}
+
+	&__title {
+		margin-bottom: toRem(0) !important;
+	}
+
+	&__wishlist {
+		width: 32px;
+		height: 32px;
+		flex: 0 0 toRem(32);
+		svg {
+			transition: all 0.4s;
+			width: 32px;
+			height: 32px;
+			object-fit: contain;
+		}
+		&._active {
+			svg {
+				path {
+					fill: $redColor;
+				}
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				svg {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&__info {
+		line-height: 150%;
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+		@include adaptiveValue("margin-bottom", 32, 24, 0, 1328, 375);
+	}
+	.top-hero__colors-title {
+		margin-bottom: toRem(16);
+		display: block;
+		font-weight: 500;
+		line-height: 120%;
+	}
+	.top-hero__colors-box {
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+	}
+
+	&__colors {
+	}
+
+	&__color {
+	}
+
+	&__size {
+	}
+
+	&__actions {
+	}
+}
+.hero__slider-swiper {
+	@media (max-width: $tablet) {
+		overflow: visible !important;
+	}
+}
+.color-top-hero {
+	display: flex;
+	align-items: center;
+	@include adaptiveValue("gap", 12, 8, 0, 1328, 375);
+	@include adaptiveValue("margin-bottom", 32, 24, 0, 1328, 375);
+
+	@media (any-hover: hover) {
+		&:hover {
+			.color-top-hero__visual {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__visual {
+		width: toRem(40);
+		height: toRem(40);
+		border-radius: 50%;
+		transition: all 0.4s;
+		flex: 0 0 toRem(40);
+		border: 1px solid #e5e5e5;
+		padding: toRem(4);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&._nude {
+			span {
+				background-color: #fff5e5;
+				border: 1px solid #f2e9da;
+			}
+		}
+		&._white {
+			span {
+				border: 1px solid #e5e5e5;
+
+				background-color: #fff;
+			}
+		}
+		span {
+			flex: 1 1 auto;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	&__info {
+		font-size: toRem(14);
+	}
+}
+.size-top-hero {
+	@include adaptiveValue("margin-bottom", 40, 32, 0, 1328, 375);
+
+	&__title {
+		font-weight: 500;
+		line-height: 120%;
+		margin-bottom: toRem(8);
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+
+	&__info {
+		line-height: 150%;
+
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+}
+.spollers {
+	&__item {
+	}
+
+	&__title {
+	}
+
+	&__body {
+	}
+}
+
+//========================================================================================================================================================
+
+.arrivals {
+	background-color: $lightGrayColor;
+	padding-bottom: toRem(80);
+	@include adaptiveValue("padding-top", 80, 64, 0, 1328, 375);
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: toRem(8) !important;
+	}
+
+	&__subtitle {
+		text-align: center;
+		line-height: 150%;
+		margin-bottom: toRem(48);
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+
+	&__items {
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: toRem(48);
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+		@media (max-width: $mobile) {
+			gap: toRem(24);
+			flex-direction: column;
+			&:nth-child(even) {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.item-arrivals {
+	&__picture {
+		border-radius: toRem(4);
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 60.242%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (min-width: $mobile) {
+			flex: 0 0 calc(50% - toRem(40));
+		}
+		@media (max-width: $mobile) {
+			display: block;
+			width: 100%;
+			padding-bottom: 122.325%;
+			img {
+				object-position: center top;
+			}
+		}
+	}
+
+	&__info {
+		@media (min-width: $mobile) {
+			flex: 0 0 calc(50% - toRem(40));
+		}
+	}
+}
+.info-item-arrivals {
+	&__title {
+		line-height: 120%;
+
+		@include adaptiveValue("margin-bottom", 16, 8, 0, 1328, 375);
+		@include adaptiveValue("font-size", 32, 24, 0, 1328, 375);
+	}
+
+	&__info {
+		line-height: 150%;
+		margin-bottom: toRem(16);
+		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
