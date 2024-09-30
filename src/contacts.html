@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Contacts"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_search.htm',{})
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<div class="contacts__title _title">Contact us</div>
+						<div data-tabs class="contacts__tabs tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">I'm a Bride</button>
+								<button type="button" class="tabs__title">Become a partner</button>
+								<button type="button" class="tabs__title">Press inquiries</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<form action="#" method="POST" class="form">
+										<div class="form__item">
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
+													class="input">
+											</div>
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" data-required="email"
+													data-error="Email" placeholder="Email" class="input">
+											</div>
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="City" class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Country"
+												class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Your message"
+												class="input">
+										</div>
+										<div class="form__action">
+											<button type="submit" class="button _btn _dark">Send</button>
+										</div>
+									</form>
+								</div>
+								<div class="tabs__body">2
+									<form action="#" method="POST" class="form">
+										<div class="form__item">
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
+													class="input">
+											</div>
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" data-required="email"
+													data-error="Email" placeholder="Email" class="input">
+											</div>
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="City" class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Country"
+												class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Your message"
+												class="input">
+										</div>
+										<div class="form__action">
+											<button type="submit" class="button _btn _dark">Send</button>
+										</div>
+									</form>
+								</div>
+								<div class="tabs__body">3
+									<form action="#" method="POST" class="form">
+										<div class="form__item">
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
+													class="input">
+											</div>
+											<div class="box-input">
+												<input autocomplete="off" type="text" name="form[]" data-required="email"
+													data-error="Email" placeholder="Email" class="input">
+											</div>
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="City" class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Country"
+												class="input">
+										</div>
+										<div class="form__item">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Your message"
+												class="input">
+										</div>
+										<div class="form__action">
+											<button type="submit" class="button _btn _dark">Send</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__picture">
+						<img src="@img/contacts/01.jpg" alt="Image">
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -52,7 +52,7 @@ flsFunctions.spollers();
 Документація: https://template.fls.guru/template-docs/modul-taby.html
 Сніппет (HTML): tabs
 */
-//flsFunctions.tabs();
+flsFunctions.tabs();
 
 /*
 Модуль "Показати ще"
@@ -117,7 +117,7 @@ flsForms.formFieldsInit({
 */
 /* Надсилання форми */
 /* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль форми "кількість" */
 // flsForms.formQuantity();
@@ -203,7 +203,7 @@ import "./files/sliders.js";
 // import './libs/parallax.js'
 
 // Функції роботи скролом
-import * as flsScroll from "./files/scroll/scroll.js";
+// import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавна навігація по сторінці
 // Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html

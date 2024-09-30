@@ -70,6 +70,7 @@ $responsiveType: 1;
 
 // Стилі тега BODY ============================================================================================================================================================================================================================================================================================================================================================================================
 body {
+
 	// scrollbar-gutter: stable;
 	// Скролл заблоковано
 	.lock & {
@@ -79,8 +80,7 @@ body {
 	}
 
 	// Сайт завантажений
-	.loaded & {
-	}
+	.loaded & {}
 }
 
 // Оболонка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -113,6 +113,7 @@ body {
 // Сніппет (HTML): cnt
 
 @if ($responsiveType==1) {
+
 	// Чуйна
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
@@ -123,20 +124,27 @@ body {
 		@if ($containerPadding>0) {
 			@if ($maxWidthContainer>0) {
 				padding: 0 toRem(math.div($containerPadding, 2));
-			} @else {
+			}
+
+			@else {
 				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
 				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
 			}
 		}
 	}
-} @else {
+}
+
+@else {
+
 	// Брейк-поїнтами
 	[class*="__container"] {
 		margin: 0 auto;
 
 		@if ($maxWidthContainer>0) {
 			max-width: toRem($containerWidth);
-		} @else {
+		}
+
+		@else {
 			@if ($containerPadding>0) {
 				padding: 0 toRem(math.div($containerPadding, 2));
 			}
@@ -179,3 +187,4 @@ body {
 @import "about";
 @import "events";
 @import "wishlist";
+@import "contacts";

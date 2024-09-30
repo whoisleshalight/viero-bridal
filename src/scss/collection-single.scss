@@ -6,8 +6,8 @@
 	@media (max-width: $mobile) {
 		margin-top: toRem(74);
 	}
-	&__container {
-	}
+
+	&__container {}
 
 	&__box {
 		display: flex;
@@ -23,33 +23,30 @@
 		align-self: flex-start;
 		min-width: 0;
 		position: relative;
+
 		@media (min-width: $tablet) {
 			flex: 0 0 toRem(708);
 			padding-left: toRem(35);
 		}
+
 		@media (max-width: $tablet) {
 			width: 100%;
 		}
 	}
 
-	&__slider-swiper {
-	}
+	&__slider-swiper {}
 
-	&__wrapper {
-	}
+	&__wrapper {}
 
-	&__slide {
-	}
+	&__slide {}
 
 	&__body {
 		flex: 1 1 auto;
 	}
 
-	&__bread {
-	}
+	&__bread {}
 
-	&__top {
-	}
+	&__top {}
 }
 
 .slide-hero {
@@ -62,6 +59,7 @@
 		@media (max-width: $tablet) {
 			padding-bottom: 122.325%;
 		}
+
 		img {
 			position: absolute;
 			top: 0;
@@ -73,10 +71,12 @@
 		}
 	}
 }
+
 .hero-pagination {
 	display: flex;
 	gap: toRem(15);
 	z-index: 4;
+
 	@media (min-width: $tablet) {
 		position: absolute;
 		top: 50%;
@@ -85,28 +85,34 @@
 
 		left: 0;
 	}
+
 	@media (max-width: $tablet) {
 		margin-top: toRem(32);
 	}
 }
+
 .swiper-pagination-bullet {
 	transition: all 0.4s;
 	background-color: #e5e5e5;
 	backdrop-filter: blur(toRem(4));
 	border-radius: toRem(100);
+
 	@media (min-width: $tablet) {
 		height: toRem(32);
 		width: toRem(3);
 	}
+
 	@media (max-width: $tablet) {
 		height: toRem(3);
 		width: toRem(32);
 	}
 }
+
 .swiper-pagination-bullet-active {
 	background-color: $mainColor;
 	cursor: default;
 }
+
 .top-hero {
 	margin-top: toRem(12);
 	@include adaptiveValue("margin-bottom", 40, 32, 0, 1328, 375);
@@ -126,12 +132,19 @@
 		width: 32px;
 		height: 32px;
 		flex: 0 0 toRem(32);
+
 		svg {
 			transition: all 0.4s;
-			width: 32px;
-			height: 32px;
+			width: toRem(32);
+			height: toRem(32);
 			object-fit: contain;
+
+			@media (max-width:$mobile) {
+				width: toRem(18);
+				height: toRem(18);
+			}
 		}
+
 		&._active {
 			svg {
 				path {
@@ -139,6 +152,7 @@
 				}
 			}
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				svg {
@@ -153,35 +167,35 @@
 		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
 		@include adaptiveValue("margin-bottom", 32, 24, 0, 1328, 375);
 	}
+
 	.top-hero__colors-title {
 		margin-bottom: toRem(16);
 		display: block;
 		font-weight: 500;
 		line-height: 120%;
 	}
+
 	.top-hero__colors-box {
 		display: flex;
 		align-items: center;
 		gap: toRem(40);
 	}
 
-	&__colors {
-	}
+	&__colors {}
 
-	&__color {
-	}
+	&__color {}
 
-	&__size {
-	}
+	&__size {}
 
-	&__actions {
-	}
+	&__actions {}
 }
+
 .hero__slider-swiper {
 	@media (max-width: $tablet) {
 		overflow: visible !important;
 	}
 }
+
 .color-top-hero {
 	display: flex;
 	align-items: center;
@@ -195,6 +209,7 @@
 			}
 		}
 	}
+
 	&__visual {
 		width: toRem(40);
 		height: toRem(40);
@@ -206,12 +221,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		&._nude {
 			span {
 				background-color: #fff5e5;
 				border: 1px solid #f2e9da;
 			}
 		}
+
 		&._white {
 			span {
 				border: 1px solid #e5e5e5;
@@ -219,6 +236,7 @@
 				background-color: #fff;
 			}
 		}
+
 		span {
 			flex: 1 1 auto;
 			width: 100%;
@@ -231,6 +249,7 @@
 		font-size: toRem(14);
 	}
 }
+
 .size-top-hero {
 	@include adaptiveValue("margin-bottom", 40, 32, 0, 1328, 375);
 
@@ -247,15 +266,13 @@
 		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
 	}
 }
+
 .spollers {
-	&__item {
-	}
+	&__item {}
 
-	&__title {
-	}
+	&__title {}
 
-	&__body {
-	}
+	&__body {}
 }
 
 //========================================================================================================================================================
@@ -265,8 +282,7 @@
 	padding-bottom: toRem(80);
 	@include adaptiveValue("padding-top", 80, 64, 0, 1328, 375);
 
-	&__container {
-	}
+	&__container {}
 
 	&__title {
 		margin-bottom: toRem(8) !important;
@@ -279,22 +295,25 @@
 		@include adaptiveValue("font-size", 16, 14, 0, 1328, 375);
 	}
 
-	&__items {
-	}
+	&__items {}
 
 	&__item {
 		&:not(:last-child) {
 			margin-bottom: toRem(48);
 		}
+
 		&:nth-child(even) {
 			flex-direction: row-reverse;
 		}
+
 		display: flex;
 		align-items: center;
-		gap: toRem(40);
+		gap: toRem(80);
+
 		@media (max-width: $mobile) {
 			gap: toRem(24);
 			flex-direction: column;
+
 			&:nth-child(even) {
 				flex-direction: column;
 			}
@@ -308,6 +327,7 @@
 		overflow: hidden;
 		position: relative;
 		padding-bottom: 60.242%;
+
 		img {
 			position: absolute;
 			top: 0;
@@ -316,13 +336,16 @@
 			height: 100%;
 			object-fit: cover;
 		}
+
 		@media (min-width: $mobile) {
 			flex: 0 0 calc(50% - toRem(40));
 		}
+
 		@media (max-width: $mobile) {
 			display: block;
 			width: 100%;
 			padding-bottom: 122.325%;
+
 			img {
 				object-position: center top;
 			}
@@ -335,6 +358,7 @@
 		}
 	}
 }
+
 .info-item-arrivals {
 	&__title {
 		line-height: 120%;

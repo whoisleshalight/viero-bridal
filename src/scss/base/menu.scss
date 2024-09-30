@@ -46,7 +46,7 @@
 	&__list {
 		@media (max-width: $mobile) {
 			flex-direction: column;
-			justify-content: flex-start;
+			justify-content: center !important;
 			align-items: flex-start !important;
 			row-gap: toRem(40);
 			flex-wrap: nowrap !important;
