@@ -32,7 +32,7 @@ addEventListener("DOMContentLoaded", (event) => {
 						}
 
 					}
-					if(resultSearchBox.classList.contains('_active')){
+					if (resultSearchBox.classList.contains('_active')) {
 						resultSearchBox.classList.remove('_active');
 					}
 				}
@@ -73,4 +73,128 @@ addEventListener("DOMContentLoaded", (event) => {
 			}
 		});
 	}
+
+	// if (window.innerWidth >= 991.98) {
+	// 	setTimeout(() => {
+	// 		document.addEventListener('scroll', () => {
+
+	// 			const selection = document.querySelector('.selection');
+	// 			if (selection) {
+
+	// 				const selectionInfoItems = selection.querySelectorAll('.item-selection');
+	// 				const selectionPictureItems = selection.querySelectorAll('.selection__image');
+
+	// 				selectionInfoItems.forEach((item, index) => {
+	// 					const rect = item.getBoundingClientRect();
+	// 					const itemCenterY = (rect.top + rect.bottom) / 2;
+	// 					const windowCenterY = window.innerHeight / 2;
+
+	// 					// Проверяем, находится ли центр элемента в центре экрана по оси Y
+	// 					if (itemCenterY >= windowCenterY - 50 && itemCenterY <= windowCenterY + 50) {
+	// 						// Удаляем класс _active со всех картинок
+	// 						selectionPictureItems.forEach(img => img.classList.remove('_active'));
+	// 						// Добавляем класс _active соответствующему изображению
+	// 						selectionPictureItems[index].classList.add('_active');
+	// 					}
+	// 				});
+
+
+
+	// 				const rect = selection.getBoundingClientRect(); // Получаем положение элемента относительно окна
+	// 				const windowHeight = window.innerHeight; // Высота видимой части окна браузера
+	// 				const offset = 300; // Смещение на 200px
+	// 				const wrapperText = document.querySelector('.wrapper-content');
+	// 				// Если нижняя часть окна касается начала блока selection (с учётом смещения 200px)
+	// 				if (rect.top <= windowHeight - offset && rect.bottom > windowHeight - offset) {
+	// 					if (wrapperText) {
+	// 						wrapperText.classList.add('_active');
+	// 					}
+	// 				}
+
+	// 				// Если нижняя часть окна касается нижней части блока selection (с учётом смещения 200px)
+	// 				else if (rect.bottom <= windowHeight - offset) {
+	// 					if (wrapperText) {
+	// 						wrapperText.classList.remove('_active');
+	// 					}
+	// 				}
+
+	// 				// Если блок выше окна (скролим выше блока, с учётом смещения 200px)
+	// 				else if (rect.top > windowHeight - offset) {
+	// 					if (wrapperText) {
+	// 						wrapperText.classList.remove('_active');
+	// 					}
+	// 				}
+
+	// 			}
+	// 		});
+	// 	}, 1000);
+
+	// }
+
+	function handleScrollAndResize() {
+		if (window.innerWidth >= 991.98) {
+			setTimeout(() => {
+				document.addEventListener('scroll', onScrollHandler);
+			}, 1000);
+		} else {
+			document.removeEventListener('scroll', onScrollHandler); // Отключаем обработчик при меньшем размере экрана
+		}
+	}
+
+	function onScrollHandler() {
+		const selection = document.querySelector('.selection');
+		if (selection) {
+
+			const selectionInfoItems = selection.querySelectorAll('.item-selection');
+			const selectionPictureItems = selection.querySelectorAll('.selection__image');
+
+			selectionInfoItems.forEach((item, index) => {
+				const rect = item.getBoundingClientRect();
+				const itemCenterY = (rect.top + rect.bottom) / 2;
+				const windowCenterY = window.innerHeight / 2;
+
+				// Проверяем, находится ли центр элемента в центре экрана по оси Y
+				if (itemCenterY >= windowCenterY - 150 && itemCenterY <= windowCenterY + 150) {
+					// Удаляем класс _active со всех картинок
+					selectionPictureItems.forEach(img => img.classList.remove('_active'));
+					// Добавляем класс _active соответствующему изображению
+					selectionPictureItems[index].classList.add('_active');
+				}
+			});
+
+			const rect = selection.getBoundingClientRect(); // Получаем положение элемента относительно окна
+			const windowHeight = window.innerHeight; // Высота видимой части окна браузера
+			const offset = 300; // Смещение на 300px
+			const wrapperText = document.querySelector('.wrapper-content');
+
+			// Если нижняя часть окна касается начала блока selection (с учётом смещения 300px)
+			if (rect.top <= windowHeight - offset && rect.bottom > windowHeight - offset) {
+				if (wrapperText) {
+					wrapperText.classList.add('_active');
+				}
+			}
+
+			// Если нижняя часть окна касается нижней части блока selection (с учётом смещения 300px)
+			else if (rect.bottom <= windowHeight - offset) {
+				if (wrapperText) {
+					wrapperText.classList.remove('_active');
+				}
+			}
+
+			// Если блок выше окна (скролим выше блока, с учётом смещения 300px)
+			else if (rect.top > windowHeight - offset) {
+				if (wrapperText) {
+					wrapperText.classList.remove('_active');
+				}
+			}
+		}
+	}
+
+	// Инициализация при загрузке страницы
+	handleScrollAndResize();
+
+	// Добавляем обработчик события resize
+	window.addEventListener('resize', handleScrollAndResize);
+
+
 });
