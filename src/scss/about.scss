@@ -185,6 +185,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			object-position: center top;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -204,7 +205,9 @@ section {
 	position: relative;
 	z-index: 3;
 }
-
+.slide-gallery{
+	cursor: pointer;
+}
 .selection__wrapper {
 	flex-basis: toRem(576);
 	position: relative;

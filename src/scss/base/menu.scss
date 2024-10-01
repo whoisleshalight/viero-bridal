@@ -14,7 +14,7 @@
 			top: 0;
 			overflow: auto;
 			padding: toRem(0) toRem(24) toRem(24) toRem(24);
-			margin-top: toRem(72);
+			
 			transition: left 0.3s;
 			display: flex;
 			background-color: $whiteColor;
@@ -28,7 +28,8 @@
 				top: 0;
 				transition: left 0.3s;
 				z-index: 2;
-				border-bottom: 1px solid $bigLightGrayColor;
+				// border-bottom: 1px solid $bigLightGrayColor;
+				background: #fff;
 				z-index: 2;
 			}
 
@@ -45,7 +46,8 @@
 	// .menu__list
 	&__list {
 		@media (max-width: $mobile) {
-			flex-direction: column;
+			flex-direction: column;margin-top: toRem(72);
+			margin-bottom: toRem(72);
 			justify-content: center !important;
 			align-items: flex-start !important;
 			row-gap: toRem(40);

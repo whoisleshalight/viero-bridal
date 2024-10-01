@@ -2,13 +2,13 @@
 .main {
 	position: relative;
 	height: calc(100vh - toRem(124));
-	margin-top: toRem(124);
+	margin-top: toRem(122);
 	display: flex;
 	flex-direction: column;
 
 	@media (max-width: $mobile) {
 		height: calc(100vh - toRem(74));
-		margin-top: toRem(74);
+		margin-top: toRem(72);
 	}
 
 	&::before {

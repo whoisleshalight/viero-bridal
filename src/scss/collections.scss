@@ -125,9 +125,8 @@
 	display: flex;
 	justify-content: flex-end;
 	padding-top: toRem(32);
-	border-bottom: 1px solid $bigLightGrayColor;
 	@include adaptiveValue("padding-bottom", 24, 16, 0, 1328, 375);
-	@include adaptiveValue("margin-bottom", 64, 32, 0, 1328, 375);
+	// @include adaptiveValue("margin-bottom", 64, 32, 0, 1328, 375);
 
 	&__item {
 		display: flex;
