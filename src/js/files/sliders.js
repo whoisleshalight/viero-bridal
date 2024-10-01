@@ -119,7 +119,7 @@ function initSliders() {
 			spaceBetween: 0,
 			//autoHeight: true,
 			speed: 800,
-			grabCursor: true,
+			// grabCursor: true,
 			initialSlide: 2,
 			centeredSlides: true,
 			thumbs: {
@@ -166,6 +166,11 @@ function initSliders() {
 
 			}
 		});
+		swiperGallery.slides.forEach((slide, index) => {
+			slide.addEventListener('click', () => {
+				 swiperGallery.slideTo(index); // Переход на выбранный слайд
+			});
+	  });
 	}
 
 	if (document.querySelector('.cart__slider')) {
