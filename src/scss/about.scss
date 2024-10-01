@@ -141,10 +141,9 @@
 .selection {
 	position: relative;
 
-	@media (min-width:toEm(991.98)) {
+	@media (min-width: toEm(991.98)) {
 		grid-template-columns: toRem(24) 1fr minmax(auto, toRem(1340)) 1fr toRem(24);
 		display: grid;
-
 	}
 
 	@media (max-width: toEm(991.98)) {
@@ -153,18 +152,15 @@
 
 	.selection__box {
 		grid-column: 1 / 6;
-
 	}
 
 	&__body {
 		position: relative;
 
-		@media (min-width:toEm(991.98)) {
+		@media (min-width: toEm(991.98)) {
 			padding-right: toRem(64);
 			flex-basis: toRem(640);
-
 		}
-
 	}
 
 	.selection__stycky {
@@ -235,7 +231,7 @@ section {
 	}
 
 	.wrapper-content__sticky {
-		content: '';
+		content: "";
 		position: sticky;
 		bottom: 0;
 		left: 0;
@@ -243,9 +239,7 @@ section {
 		height: 200px;
 		background-color: $mainColor;
 		z-index: 33;
-
 	}
-
 }
 
 @media (min-width: 991.98px) {
@@ -253,17 +247,17 @@ section {
 		grid-column: 3 / 6;
 		display: flex;
 	}
-
 }
 
 .selection__wrapper {
-	@media (min-width:toEm(991.98)) {
+	@media (min-width: toEm(991.98)) {
 		padding-top: 80%;
 		padding-bottom: 80%;
 	}
 
 	.item-selection:not(:last-child) {
 		margin-bottom: toRem(64);
+		// margin-bottom: 100vh;
 
 		@media (max-width: toEm(991.98)) {
 			margin-bottom: toRem(48);
@@ -276,7 +270,6 @@ section {
 	font-family: "belgant";
 	margin-bottom: toRem(8);
 	@include adaptiveValue("font-size", 32, 24, 0, 1328, 375);
-
 }
 
 .item-selection__info {
@@ -292,7 +285,7 @@ section {
 }
 
 .item-selection__picture {
-	@media (min-width:toEm(991.98)) {
+	@media (min-width: toEm(991.98)) {
 		display: none;
 	}
 
