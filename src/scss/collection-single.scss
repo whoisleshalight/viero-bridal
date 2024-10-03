@@ -25,7 +25,7 @@
 		position: relative;
 
 		@media (min-width: toEm(1176)) {
-			flex: 0 0 toRem(708);
+			flex: 0 0 39.688rem;
 			padding-left: toRem(35);
 		}
 
@@ -50,14 +50,16 @@
 }
 
 
-.hero__slider-swiper{
-	overflow: hidden;	@include adaptiveValue("border-radius", 16, 8, 0, 1328, 375);
+.hero__slider-swiper {
+	overflow: hidden;
+	@include adaptiveValue("border-radius", 16, 8, 0, 1328, 375);
 
 }
+
 .slide-hero {
 	&__picture {
 		position: relative;
-		padding-bottom: 105.202%;
+		padding-bottom: 116.667%;
 		overflow: hidden;
 		@include adaptiveValue("border-radius", 16, 8, 0, 1328, 375);
 

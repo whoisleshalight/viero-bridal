@@ -8,7 +8,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation, Pagination, Parallax, Thumbs } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Parallax, Thumbs } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -168,9 +168,9 @@ function initSliders() {
 		});
 		swiperGallery.slides.forEach((slide, index) => {
 			slide.addEventListener('click', () => {
-				 swiperGallery.slideTo(index); // Переход на выбранный слайд
+				swiperGallery.slideTo(index); // Переход на выбранный слайд
 			});
-	  });
+		});
 	}
 
 	if (document.querySelector('.cart__slider')) {
@@ -313,6 +313,53 @@ function initSliders() {
 			}
 		});
 	}
+	if (document.querySelector('.arcollection-slider')) {
+		new Swiper('.arcollection-slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Pagination, Navigation, Parallax, Autoplay],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//autoHeight: true,
+			speed: 1000,
+			// grabCursor: true,
+			parallax: true,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+
+			pagination: {
+				el: '.arcollection-pagination',
+				clickable: true,
+			},
+			navigation: {
+				prevEl: '.arcollection-slider-button-prev',
+				nextEl: '.arcollection-slider-button-next',
+			},
+			//preloadImages: false,
+			//lazy: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			/*
+			// Ефекти
+			effect: 'fade',
+		
+			*/
+
+			// Брейкпоінти
+
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+
 }
 
 

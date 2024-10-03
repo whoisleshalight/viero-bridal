@@ -8,9 +8,227 @@
 	<div class="wrapper">
 		@@include('html/_search.htm',{})
 		@@include('html/_header.htm',{})
-		<main class="page">
-			<section class=""></section>
+		<main class="page arcollection">
+			<section class="arcollection__main main-arcollection">
+				<!-- Оболонка слайдера -->
+				<div class="main-arcollection__slider swiper arcollection-slider">
+					<!-- Частина слайдера, що рухається -->
+					<div class="main-arcollection__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="main-arcollection__slide swiper-slide slide-main-arcollection">
+							<picture itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+								<source media="screen and (max-width: 576.98px)" srcset="@img/collections/03.jpg"
+									type="image/jpeg">
+								<img src="@img/collections/02.jpg" alt="picture">
+							</picture>
+							<div class="slide-main-arcollection__content">
+								<div class="slide-main-arcollection__container">
+									<div class="slide-main-arcollection__title _title" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-30%">First
+										Look Collection</div>
+									<div class="slide-main-arcollection__action" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-40%">
+										<a class="_btn _light" href="#">View Collection</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-arcollection__slide swiper-slide slide-main-arcollection">
+							<picture itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+								<source media="screen and (max-width: 576.98px)" srcset="@img/collections/03.jpg"
+									type="image/jpeg">
+								<img src="@img/collections/02.jpg" alt="picture">
+							</picture>
+							<div class="slide-main-arcollection__content">
+								<div class="slide-main-arcollection__container">
+									<div class="slide-main-arcollection__title _title" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-30%">First
+										Look Collection</div>
+									<div class="slide-main-arcollection__action" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-40%">
+										<a class="_btn _light" href="#">View Collection</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-arcollection__slide swiper-slide slide-main-arcollection">
+							<picture itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+								<source media="screen and (max-width: 576.98px)" srcset="@img/collections/03.jpg"
+									type="image/jpeg">
+								<img src="@img/collections/02.jpg" alt="picture">
+							</picture>
+							<div class="slide-main-arcollection__content">
+								<div class="slide-main-arcollection__container">
+									<div class="slide-main-arcollection__title _title" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-30%">First
+										Look Collection</div>
+									<div class="slide-main-arcollection__action" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-40%">
+										<a class="_btn _light" href="#">View Collection</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-arcollection__slide swiper-slide slide-main-arcollection">
+							<picture itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+								<source media="screen and (max-width: 576.98px)" srcset="@img/collections/03.jpg"
+									type="image/jpeg">
+								<img src="@img/collections/02.jpg" alt="picture">
+							</picture>
+							<div class="slide-main-arcollection__content">
+								<div class="slide-main-arcollection__container">
+									<div class="slide-main-arcollection__title _title" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-30%">First
+										Look Collection</div>
+									<div class="slide-main-arcollection__action" data-swiper-parallax-opacity="0"
+										data-swiper-parallax="-40%">
+										<a class="_btn _light" href="#">View Collection</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
+					</div>
+					<div class="arcollection-pagination"></div>
+					<button type="button" class="arcollection-slider-button-prev">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 8.3335L26.6667 20.0002L15 31.6668" stroke="white" stroke-width="2.5"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+					<button type="button" class="arcollection-slider-button-next">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 8.3335L26.6667 20.0002L15 31.6668" stroke="white" stroke-width="2.5"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+			</section>
+			<section class="arcollection__content content-arcollection">
+				<div class="content-arcollection__boxes">
+					<div class="content-arcollection__box _dark-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Winter’23</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Spring’23</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _dark" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-arcollection__box _light-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">F/W’21 Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Holiday Collection </div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-arcollection__box _dark-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">S/S’22 Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Fall in Love Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-arcollection__box _light-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">S/S’19 Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Sensation Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-arcollection__box _dark-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">The Wave Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">F/W’20 Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-arcollection__box _light-box">
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/01.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Viero Spring’24</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="arcollection__item item-arcollection">
+							<img src="@img/arcollection/02.jpg" alt="Image">
+							<div class="item-arcollection__body">
+								<div class="item-arcollection__title">Venice Flood’20 Collection</div>
+								<div class="item-arcollection__actions">
+									<a class="_btn _light" href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

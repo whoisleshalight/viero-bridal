@@ -59,7 +59,7 @@ body::after {
 	pointer-events: none;
 	transition: transform 0.3s ease 0s;
 	background-color: #fff;
-	padding: 20px;
+	padding: toRem(30) toRem(40);
 	width: 100%;
 	max-width: 600px;
 	border-radius: 4px;
@@ -68,6 +68,10 @@ body::after {
 
 	.lock & {
 		visibility: visible;
+	}
+
+	@media (max-width:$mobile) {
+		padding: toRem(16) toRem(16);
 	}
 }
 
@@ -93,5 +97,80 @@ body::after {
 	button {
 		min-width: 100px;
 		text-transform: uppercase;
+
+		@media (max-width:$mobile) {
+			width: 100%;
+		}
+	}
+}
+
+.air-datepicker-global-container {
+	z-index: 99999;
+}
+
+.air-datepicker-cell.-day-.-current- {
+	font-weight: 700;
+	color: $mainColor;
+}
+
+.air-datepicker-cell.-selected- {
+	background-color: $mainColor !important;
+	color: $whiteColor !important;
+}
+
+.air-datepicker-body--day-name {
+	font-weight: 700 !important;
+	color: $mainColor !important;
+}
+
+.form-content-booking__date {
+	display: flex;
+	gap: toRem(16);
+	margin-bottom: toRem(16);
+	margin-top: toRem(16);
+
+	@media (max-width:$mobile) {
+		flex-direction: column;
+	}
+
+	.date-form-content-booking__item {
+		flex: 0 0 calc(50% - toRem(8));
+
+		label {
+			margin-bottom: toRem(8);
+			font-weight: 500;
+		}
+	}
+
+	input {
+		border-radius: toRem(4);
+		overflow: hidden;
+		border: 1px solid #71706f;
+		padding-left: toRem(20);
+		padding-top: toRem(6);
+		padding-bottom: toRem(6);
+		padding-right: toRem(20);
+	}
+}
+
+.content-booking__title._title {
+	@include adaptiveValue("font-size", 56, 36, 0, 1328, 375);
+}
+
+.booking__content {
+	margin-top: toRem(16);
+}
+
+.popup__close {
+	svg {
+		transition: all 0.4s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				transform: scale(.9);
+			}
+		}
 	}
 }

@@ -7,7 +7,28 @@ import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
 
 addEventListener("DOMContentLoaded", (event) => {
+	const dateBox = document.querySelector('.date-form-content-booking');
+	if (dateBox) {
+		let dpMin, dpMax;
 
+		dpMin = new AirDatepicker('#startDate', {
+			container: dateBox,
+			onSelect({ date }) {
+				dpMax.update({
+					minDate: date
+				})
+			}
+		})
+
+		dpMax = new AirDatepicker('#endDate', {
+			container: dateBox,
+			onSelect({ date }) {
+				dpMin.update({
+					maxDate: date,
+				})
+			}
+		})
+	}
 
 
 
