@@ -1,5 +1,6 @@
 .arcollection {
 
+	@include adaptiveValue("padding-bottom", 80, 40, 0, 1328, 375);
 
 	&__main {
 		display: flex;
@@ -11,6 +12,20 @@
 			margin-top: toRem(72);
 			height: calc(100vh - toRem(74));
 		}
+	}
+}
+
+.item-arcollection__link {
+	@media (any-hover: hover) {
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	img {
+		transition: all 0.4s;
 	}
 }
 
@@ -176,13 +191,6 @@
 
 
 //========================================================================================================================================================
-.arcollection {
-
-	&__content {}
-
-	&__item {}
-}
-
 .content-arcollection {
 
 	&__boxes {}
@@ -201,10 +209,12 @@
 	}
 }
 
-
 .item-arcollection {
 	flex: 0 0 50%;
 	position: relative;
+	padding-bottom: 45.9723%;
+
+	overflow: hidden;
 
 	img {
 		position: absolute;
@@ -215,9 +225,32 @@
 		object-fit: cover;
 	}
 
-	&__body {}
+	&__body {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		bottom: toRem(40);
+		transform: translateX(-50%);
+	}
 
-	&__title {}
+	&__title {
+		font-family: "belgant";
+		@include adaptiveValue("margin-bottom", 32, 24, 0, 1328, 375);
+		@include adaptiveValue("font-size", 32, 24, 0, 1328, 375);
 
-	&__actions {}
+		._dark-box & {
+			color: $mainColor;
+		}
+
+		._light-box & {
+			color: $whiteColor;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: center;
+	}
 }
