@@ -1,0 +1,120 @@
+.locator {
+	margin-top: toRem(124);
+	padding-top: toRem(32);
+	@include adaptiveValue("padding-bottom", 16, 32, 0, 1328, 375);
+
+	@media (max-width: $mobile) {
+		margin-top: toRem(74);
+	}
+
+	&__container {}
+
+	&__title {
+		text-align: left;
+		@include adaptiveValue("margin-bottom", 24, 16, 0, 1328, 375);
+
+	}
+
+	&__body {}
+
+	&__filter {}
+
+	&__items {
+		display: flex;
+		gap: toRem(56);
+		flex-wrap: wrap;
+		margin-top: toRem(24);
+	}
+
+	&__item {
+		flex: 0 0 calc(50% - toRem(28));
+		display: flex;
+		gap: toRem(16);
+
+		@media (max-width:$mobile) {
+			flex-direction: column;
+		}
+	}
+}
+
+.filter-locator {
+
+	&__item {}
+}
+
+.item-filter-locator {
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 24, 16, 0, 1328, 375);
+	}
+
+	&__label {
+		font-size: toRem(12);
+		color: #71706F;
+		margin-bottom: toRem(6);
+	}
+}
+
+.item-locator {
+
+	&__id {
+		font-weight: 500;
+	}
+
+	&__body {}
+
+	&__title {
+		font-weight: 500;
+		line-height: 120%;
+	}
+
+	&__subtitle {
+		line-height: 150%;
+		color: #71706F;
+		margin-top: toRem(2);
+		margin-bottom: toRem(16);
+	}
+
+	&__info {
+		a {
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		a,
+		p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: flex;
+			gap: toRem(8);
+			align-items: center;
+			line-height: 150%;
+
+
+
+			svg {
+				width: toRem(20);
+				height: 24px;
+				object-position: center;
+				object-fit: contain;
+
+
+			}
+
+			&:not(:last-child) {
+				margin-bottom: toRem(16);
+			}
+		}
+	}
+
+	&__action {
+		margin-top: toRem(16);
+		display: inline-flex;
+	}
+}
+
+._text-light {
+	color: #71706F;
+}

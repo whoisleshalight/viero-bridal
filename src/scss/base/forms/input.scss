@@ -3,6 +3,7 @@
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="phone"],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -39,4 +40,8 @@ textarea {
 textarea.input {
 	resize: none;
 	padding: 0px 0px;
+}
+
+input[type="phone"] {
+	outline: none;
 }

@@ -1,14 +1,63 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup booking">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">
-				<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
-					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+				<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M1.0254 72.5686C-0.3418 73.9358 -0.3418 76.1545 1.0254 77.5217C2.3926 78.8889 4.6074 78.8889 5.9746 77.5217L39.2716 44.2207L72.5686 77.5217C73.9358 78.885 76.1545 78.885 77.5217 77.5217C78.885 76.1545 78.885 73.9358 77.5217 72.5686L44.2207 39.2716L77.5217 5.9746C78.885 4.6074 78.885 2.3926 77.5217 1.0254C76.1545 -0.3418 73.9358 -0.3418 72.5686 1.0254L39.2716 34.3224L5.9746 1.0254C4.6074 -0.3418 2.3926 -0.3418 1.0254 1.0254C-0.3418 2.3926 -0.3418 4.6074 1.0254 5.9746L34.3224 39.2716L1.0254 72.5686Z"
+						fill="black" />
 				</svg>
+
 			</button>
-			<div class="popup__text">
-				Popup content
+			<div class="booking__content content-booking">
+				<div class="content-booking__title _title">Lorem ipsum </div>
+
+				<div class="content-booking__form tabs form-content-booking">
+					<form action="#" method="POST" class="form">
+						<div class="form__item">
+							<div class="box-input">
+								<input autocomplete="off" type="text" name="form[]" placeholder="First name" class="input">
+							</div>
+							<div class="box-input">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Last name" class="input">
+							</div>
+						</div>
+						<div class="form__item">
+							<div class="box-input">
+								<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Email"
+									placeholder="Email" class="input">
+							</div>
+							<div class="box-input">
+								<input autocomplete="off" data-required="phone" type="phone" name="form[]"
+									data-error="Phone number" placeholder="Phone number" class="input">
+							</div>
+						</div>
+
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="form[]" placeholder="City" class="input">
+						</div>
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Country" class="input">
+						</div>
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Your message" class="input">
+						</div>
+						<div class="form-content-booking__box">
+							<div class="checkbox">
+								<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1"
+									name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Labore perferendis doloribus in! Incidunt, impedit! Officia,
+										perferendis incidunt, pariatur voluptatem, facilis adipisci voluptas dolore delectus enim
+										eius deserunt. Atque, aperiam vel?</span></label>
+							</div>
+						</div>
+						<div class="form__action">
+							<button type="submit" class="button _btn _dark">Send</button>
+						</div>
+					</form>
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -3,6 +3,8 @@ import { isMobile } from "./functions.js";
 // Підключення списку активних модулів
 import { flsModules } from "./modules.js";
 
+import AirDatepicker from 'air-datepicker';
+import 'air-datepicker/air-datepicker.css';
 
 addEventListener("DOMContentLoaded", (event) => {
 
@@ -74,62 +76,7 @@ addEventListener("DOMContentLoaded", (event) => {
 		});
 	}
 
-	// if (window.innerWidth >= 991.98) {
-	// 	setTimeout(() => {
-	// 		document.addEventListener('scroll', () => {
 
-	// 			const selection = document.querySelector('.selection');
-	// 			if (selection) {
-
-	// 				const selectionInfoItems = selection.querySelectorAll('.item-selection');
-	// 				const selectionPictureItems = selection.querySelectorAll('.selection__image');
-
-	// 				selectionInfoItems.forEach((item, index) => {
-	// 					const rect = item.getBoundingClientRect();
-	// 					const itemCenterY = (rect.top + rect.bottom) / 2;
-	// 					const windowCenterY = window.innerHeight / 2;
-
-	// 					// Проверяем, находится ли центр элемента в центре экрана по оси Y
-	// 					if (itemCenterY >= windowCenterY - 50 && itemCenterY <= windowCenterY + 50) {
-	// 						// Удаляем класс _active со всех картинок
-	// 						selectionPictureItems.forEach(img => img.classList.remove('_active'));
-	// 						// Добавляем класс _active соответствующему изображению
-	// 						selectionPictureItems[index].classList.add('_active');
-	// 					}
-	// 				});
-
-
-
-	// 				const rect = selection.getBoundingClientRect(); // Получаем положение элемента относительно окна
-	// 				const windowHeight = window.innerHeight; // Высота видимой части окна браузера
-	// 				const offset = 300; // Смещение на 200px
-	// 				const wrapperText = document.querySelector('.wrapper-content');
-	// 				// Если нижняя часть окна касается начала блока selection (с учётом смещения 200px)
-	// 				if (rect.top <= windowHeight - offset && rect.bottom > windowHeight - offset) {
-	// 					if (wrapperText) {
-	// 						wrapperText.classList.add('_active');
-	// 					}
-	// 				}
-
-	// 				// Если нижняя часть окна касается нижней части блока selection (с учётом смещения 200px)
-	// 				else if (rect.bottom <= windowHeight - offset) {
-	// 					if (wrapperText) {
-	// 						wrapperText.classList.remove('_active');
-	// 					}
-	// 				}
-
-	// 				// Если блок выше окна (скролим выше блока, с учётом смещения 200px)
-	// 				else if (rect.top > windowHeight - offset) {
-	// 					if (wrapperText) {
-	// 						wrapperText.classList.remove('_active');
-	// 					}
-	// 				}
-
-	// 			}
-	// 		});
-	// 	}, 1000);
-
-	// }
 
 	function handleScrollAndResize() {
 		if (window.innerWidth >= 991.98) {
