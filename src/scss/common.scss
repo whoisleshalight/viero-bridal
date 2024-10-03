@@ -103,10 +103,9 @@ body::-webkit-scrollbar {
 .cart {
 	min-width: 0;
 	border-radius: toRem(4);
-overflow: hidden;
+	overflow: hidden;
 	@media (any-hover: hover) {
 		&:hover {
-
 			.cart-button-prev,
 			.cart-button-next {
 				opacity: 1;
@@ -342,7 +341,8 @@ overflow: hidden;
 	padding-bottom: toRem(80);
 	color: $whiteColor;
 
-	&__container {}
+	&__container {
+	}
 
 	&__title {
 		margin-bottom: toRem(8) !important;
@@ -368,9 +368,11 @@ overflow: hidden;
 		}
 	}
 
-	&__wrapper {}
+	&__wrapper {
+	}
 
-	&__slide {}
+	&__slide {
+	}
 
 	&__controlls {
 		margin-top: toRem(64);
@@ -427,7 +429,8 @@ overflow: hidden;
 		@include adaptiveValue("font-size", 32, 24, 0, 1328, 375);
 	}
 
-	&__label {}
+	&__label {
+	}
 }
 
 .more-button-prev {
@@ -456,7 +459,8 @@ overflow: hidden;
 	}
 }
 
-.more-button-next {}
+.more-button-next {
+}
 
 .more-button-prev,
 .more-button-next {
@@ -503,7 +507,6 @@ overflow: hidden;
 }
 
 @keyframes swiper-preloader-spin {
-
 	100% {
 		transform: rotate(360deg);
 	}
