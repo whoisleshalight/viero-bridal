@@ -37,7 +37,7 @@
 	row-gap: toRem(32);
 
 	@media (max-width: toEm(860)) {
-		flex-wrap: wrap;
+		flex-wrap: wrap;    justify-content: space-between;
 	}
 
 	@media (max-width: toEm(540)) {

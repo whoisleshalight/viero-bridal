@@ -1,4 +1,5 @@
 .arcollection {
+	padding-bottom: toRem(80);
 
 	@include adaptiveValue("padding-bottom", 80, 40, 0, 1328, 375);
 
@@ -6,11 +7,12 @@
 		display: flex;
 		flex-direction: column;
 		height: calc(100vh - toRem(124));
-		margin-top: toRem(124);
+		margin-top: toRem(122);
 
 		@media (max-width: $mobile) {
 			margin-top: toRem(72);
 			height: calc(100vh - toRem(74));
+			// padding-bottom: toRem(40);
 		}
 	}
 }

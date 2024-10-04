@@ -24,13 +24,19 @@
 		gap: toRem(56);
 		flex-wrap: wrap;
 		margin-top: toRem(24);
+		@media (max-width:$mobile){
+			 justify-content: center; 
+		}
 	}
 
 	&__item {
 		flex: 0 0 calc(50% - toRem(28));
 		display: flex;
 		gap: toRem(16);
-
+		padding-top: toRem(16);
+		padding-bottom: toRem(16);
+		border-top: 1px solid #F7F6F4;
+		border-bottom: 1px solid #F7F6F4;
 		@media (max-width:$mobile) {
 			flex-direction: column;
 		}
