@@ -7,25 +7,27 @@
 		margin-top: toRem(74);
 	}
 
-	&__container {}
+	&__container {
+	}
 
 	&__title {
 		text-align: left;
 		@include adaptiveValue("margin-bottom", 24, 16, 0, 1328, 375);
-
 	}
 
-	&__body {}
+	&__body {
+	}
 
-	&__filter {}
+	&__filter {
+	}
 
 	&__items {
 		display: flex;
 		gap: toRem(56);
 		flex-wrap: wrap;
 		margin-top: toRem(24);
-		@media (max-width:$mobile){
-			 justify-content: center; 
+		@media (max-width: $mobile) {
+			justify-content: center;
 		}
 	}
 
@@ -35,17 +37,21 @@
 		gap: toRem(16);
 		padding-top: toRem(16);
 		padding-bottom: toRem(16);
-		border-top: 1px solid #F7F6F4;
-		border-bottom: 1px solid #F7F6F4;
-		@media (max-width:$mobile) {
+		border-top: 1px solid #f7f6f4;
+		border-bottom: 1px solid #f7f6f4;
+		@media (max-width: toEm(860)) {
+			flex: 1 1 auto;
+			justify-content: center;
+		}
+		@media (max-width: 480px) {
 			flex-direction: column;
 		}
 	}
 }
 
 .filter-locator {
-
-	&__item {}
+	&__item {
+	}
 }
 
 .item-filter-locator {
@@ -55,18 +61,18 @@
 
 	&__label {
 		font-size: toRem(12);
-		color: #71706F;
+		color: #71706f;
 		margin-bottom: toRem(6);
 	}
 }
 
 .item-locator {
-
 	&__id {
 		font-weight: 500;
 	}
 
-	&__body {}
+	&__body {
+	}
 
 	&__title {
 		font-weight: 500;
@@ -75,7 +81,7 @@
 
 	&__subtitle {
 		line-height: 150%;
-		color: #71706F;
+		color: #71706f;
 		margin-top: toRem(2);
 		margin-bottom: toRem(16);
 	}
@@ -95,18 +101,15 @@
 			text-overflow: ellipsis;
 			display: flex;
 			gap: toRem(8);
-			align-items: center;
+			align-items: flex-start;
 			line-height: 150%;
-
-
 
 			svg {
 				width: toRem(20);
 				height: 24px;
 				object-position: center;
 				object-fit: contain;
-
-
+				flex: 0 0 toRem(20);
 			}
 
 			&:not(:last-child) {
@@ -122,5 +125,5 @@
 }
 
 ._text-light {
-	color: #71706F;
+	color: #71706f;
 }
