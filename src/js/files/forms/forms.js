@@ -156,8 +156,11 @@ export let formValidate = {
 }
 /* Відправлення форм */
 export function formSubmit() {
+
 	const forms = document.forms;
+
 	if (forms.length) {
+
 		for (const form of forms) {
 			form.addEventListener('submit', function (e) {
 				const form = e.target;

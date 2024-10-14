@@ -21,7 +21,10 @@
 							</nav>
 							<div data-tabs-body class="tabs__content">
 								<div class="tabs__body">
-									<form action="#" method="POST" class="form">
+									<form action="#" method="POST" class="form " data-popup-message=".send-form">
+										<div class="form-send">
+											<div class="loading"></div>
+										</div>
 										<div class="form__item">
 											<div class="box-input">
 												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
@@ -49,7 +52,10 @@
 									</form>
 								</div>
 								<div class="tabs__body">2
-									<form action="#" method="POST" class="form">
+									<form action="#" method="POST" class="form _sending">
+										<div class="form-send">
+											<div class="loading"></div>
+										</div>
 										<div class="form__item">
 											<div class="box-input">
 												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
@@ -78,6 +84,9 @@
 								</div>
 								<div class="tabs__body">3
 									<form action="#" method="POST" class="form">
+										<div class="form-send">
+											<div class="loading"></div>
+										</div>
 										<div class="form__item">
 											<div class="box-input">
 												<input autocomplete="off" type="text" name="form[]" placeholder="Name"
@@ -114,6 +123,27 @@
 			</section>
 		</main>
 		@@include('html/_footer.htm',{})
+	</div>
+	<div id="popup" aria-hidden="true" class="popup send-form">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M1.0254 72.5686C-0.3418 73.9358 -0.3418 76.1545 1.0254 77.5217C2.3926 78.8889 4.6074 78.8889 5.9746 77.5217L39.2716 44.2207L72.5686 77.5217C73.9358 78.885 76.1545 78.885 77.5217 77.5217C78.885 76.1545 78.885 73.9358 77.5217 72.5686L44.2207 39.2716L77.5217 5.9746C78.885 4.6074 78.885 2.3926 77.5217 1.0254C76.1545 -0.3418 73.9358 -0.3418 72.5686 1.0254L39.2716 34.3224L5.9746 1.0254C4.6074 -0.3418 2.3926 -0.3418 1.0254 1.0254C-0.3418 2.3926 -0.3418 4.6074 1.0254 5.9746L34.3224 39.2716L1.0254 72.5686Z"
+							fill="black" />
+					</svg>
+				</button>
+				<div class="booking__content content-booking">
+					<div class="content-booking__title _title">After sending title</div>
+					<div class="content-booking__form tabs form-content-booking">
+						<div class="send-form__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+							molestias ut consectetur ab, assumenda quos distinctio quas alias, vel ipsum, ea laudantium
+							voluptas earum dicta rerum officia adipisci quidem sint?</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	@@include('html/_js.htm',{})
 </body>

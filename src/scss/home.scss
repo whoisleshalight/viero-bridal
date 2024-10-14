@@ -76,8 +76,7 @@
 		}
 	}
 
-	&__btn {
-	}
+	&__btn {}
 }
 
 .main__video-action {
@@ -149,11 +148,13 @@
 	// 	transition: all 0.6s;
 	// }
 }
+
 .discover__subtitle,
 .discover__title {
 	padding-left: toRem(24);
 	padding-right: toRem(24);
 }
+
 .slide-info-gallery {
 	text-align: center;
 
@@ -177,8 +178,7 @@
 		align-items: center;
 	}
 
-	&__button {
-	}
+	&__button {}
 }
 
 .gallery__slider {
@@ -193,6 +193,7 @@
 
 	&.swiper-slide-prev {
 		transform: scale(0.8) translateX(-10%);
+
 		@media (max-width: $mobile) {
 			transform: scale(0.8) translateX(0%);
 		}
@@ -200,6 +201,7 @@
 
 	&.swiper-slide-next {
 		transform: scale(0.8) translateX(10%);
+
 		@media (max-width: $mobile) {
 			transform: scale(0.8) translateX(0%);
 		}
@@ -287,17 +289,20 @@
 		color: $whiteColor;
 	}
 
-	&__actions {
-	}
+	&__actions {}
+}
+
+.more-article .more__slider {
+	margin-top: toRem(0) !important;
 }
 
 //========================================================================================================================================================
+
 .featured {
 	padding-bottom: toRem(56);
 	@include adaptiveValue("padding-top", 56, 32, 0, 1328, 375);
 
-	&__container {
-	}
+	&__container {}
 
 	.featured__items {
 		display: flex;
@@ -322,7 +327,7 @@
 		}
 
 		@media (max-width: $mobile) {
-			flex: 0 0 calc(50% - toRem(12));
+			flex: 0 0 calc(50% - toRem(20));
 		}
 	}
 
@@ -337,8 +342,7 @@
 	}
 }
 
-.item-featured {
-}
+.item-featured {}
 
 //========================================================================================================================================================
 .retailer {
@@ -347,8 +351,7 @@
 	@include adaptiveValue("padding-top", 80, 64, 0, 1328, 375);
 	@include adaptiveValue("padding-bottom", 80, 64, 0, 1328, 375);
 
-	&__container {
-	}
+	&__container {}
 
 	&__title {
 		font-family: "belgant";
@@ -383,8 +386,7 @@
 	padding-bottom: toRem(64);
 	background-color: $lightGrayColor;
 
-	&__container {
-	}
+	&__container {}
 
 	&__title {
 		font-family: "belgant";
@@ -406,8 +408,7 @@
 		@include adaptiveValue("column-gap", 70, 24, 0, 1328, 375);
 	}
 
-	&__item {
-	}
+	&__item {}
 
 	&__actions {
 		display: flex;
