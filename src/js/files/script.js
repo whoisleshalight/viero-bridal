@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		setTimeout(() => {
 			loader.classList.add('done')
 			document.documentElement.classList.remove('lock')
-	`	}, 3000);`
+		}, 3000);
 	}
 });
 
