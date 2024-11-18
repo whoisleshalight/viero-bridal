@@ -6,9 +6,12 @@
 
 <body>
 	<div class="wrapper">
+
+		@@include('html/_loader.htm',{})
 		@@include('html/_search.htm',{})
 		@@include('html/_header.htm',{})
 		<main class="page">
+
 			<section class="main">
 				<img src="@img/home/main/01.jpg" alt="Main image" class="main__left">
 				<img src="@img/home/main/02.jpg" alt="Main image" class="main__right ">
@@ -90,194 +93,192 @@
 			</section>
 			<section class="discover">
 				<!-- <div class="discover__container"> -->
-					<h2 class="discover__title _title">Discover Our Collections</h2>
-					<p class="discover__subtitle _subtitle ">Pick Your Favorite, Start Shopping</p>
-					<div class="discover__body">
+				<h2 class="discover__title _title">Discover Our Collections</h2>
+				<p class="discover__subtitle _subtitle ">Pick Your Favorite, Start Shopping</p>
+				<div class="discover__body">
 
-						<!-- Оболонка слайдера -->
-						<div class="gallery__slider swiper">
-							<!-- Частина слайдера, що рухається -->
-							<div class="gallery__wrapper swiper-wrapper">
-								<!-- Слайд -->
+					<!-- Оболонка слайдера -->
+					<div class="gallery__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="gallery__wrapper swiper-wrapper">
+							<!-- Слайд -->
 
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/02.jpg" alt="Image">
-									</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/02.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/03.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/03.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<span class="slide-gallery__label">New Arrival</span>
-										<img src="@img/home/discovery/01.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<span class="slide-gallery__label">New Arrival</span>
+									<img src="@img/home/discovery/01.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/04.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/04.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/05.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/05.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/02.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/02.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/03.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/03.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<span class="slide-gallery__label">New Arrival</span>
-										<img src="@img/home/discovery/01.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<span class="slide-gallery__label">New Arrival</span>
+									<img src="@img/home/discovery/01.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/04.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/04.jpg" alt="Image">
 								</div>
-								<div class="gallery__slide swiper-slide slide-gallery">
-									<div class="slide-gallery__body">
-										<img src="@img/home/discovery/05.jpg" alt="Image">
-									</div>
+							</div>
+							<div class="gallery__slide swiper-slide slide-gallery">
+								<div class="slide-gallery__body">
+									<img src="@img/home/discovery/05.jpg" alt="Image">
 								</div>
 							</div>
 						</div>
-
-						<!-- Оболонка слайдера -->
-						<div class="info-gallery__slider swiper">
-							<!-- Частина слайдера, що рухається -->
-							<div class="info-gallery__wrapper swiper-wrapper">
-								<!-- Слайд -->
-
-								<div class="info-gallery__slide swiper-slide slide-info-gallery"
-									data-swiper-parallax-opacity="0">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-
-								<div class="info-gallery__slide swiper-slide slide-info-gallery"
-									data-swiper-parallax-opacity="0">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-								<div class="info-gallery__slide swiper-slide slide-info-gallery">
-									<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
-									<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
-										designed for the extravagant brides,
-										who loves intricate details. These dreamy and divine designs introduce a new level of
-										sophistication.</div>
-									<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
-										<a href="#" class="slide-info-gallery__button _btn _dark">View
-											Collection</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
+
+					<!-- Оболонка слайдера -->
+					<div class="info-gallery__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="info-gallery__wrapper swiper-wrapper">
+							<!-- Слайд -->
+
+							<div class="info-gallery__slide swiper-slide slide-info-gallery" data-swiper-parallax-opacity="0">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+
+							<div class="info-gallery__slide swiper-slide slide-info-gallery" data-swiper-parallax-opacity="0">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+							<div class="info-gallery__slide swiper-slide slide-info-gallery">
+								<div class="slide-info-gallery__title" data-swiper-parallax-opacity="0">First Look </div>
+								<div class="slide-info-gallery__info" data-swiper-parallax-opacity="0">This collection is
+									designed for the extravagant brides,
+									who loves intricate details. These dreamy and divine designs introduce a new level of
+									sophistication.</div>
+								<div class="slide-info-gallery__actions" data-swiper-parallax-opacity="0">
+									<a href="#" class="slide-info-gallery__button _btn _dark">View
+										Collection</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 				<!-- </div> -->
 			</section>
 			<section class="new">

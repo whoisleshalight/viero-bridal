@@ -1,7 +1,11 @@
 // Підключення функціоналу "Чертоги Фрілансера"
-import { isMobile } from "./functions.js";
+import {
+	isMobile
+} from "./functions.js";
 // Підключення списку активних модулів
-import { flsModules } from "./modules.js";
+import {
+	flsModules
+} from "./modules.js";
 
 import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
@@ -13,7 +17,9 @@ addEventListener("DOMContentLoaded", (event) => {
 
 		dpMin = new AirDatepicker('#startDate', {
 			container: dateBox,
-			onSelect({ date }) {
+			onSelect({
+				date
+			}) {
 				dpMax.update({
 					minDate: date
 				})
@@ -22,7 +28,9 @@ addEventListener("DOMContentLoaded", (event) => {
 
 		dpMax = new AirDatepicker('#endDate', {
 			container: dateBox,
-			onSelect({ date }) {
+			onSelect({
+				date
+			}) {
 				dpMin.update({
 					maxDate: date,
 				})
@@ -166,3 +174,25 @@ addEventListener("DOMContentLoaded", (event) => {
 
 
 });
+
+document.documentElement.classList.add('lock');
+document.addEventListener("DOMContentLoaded", (event) => {
+	const loader = document.querySelector('#page-preloader');
+	if (loader) {
+		setTimeout(() => {
+			loader.classList.add('done')
+			document.documentElement.classList.remove('lock')
+	`	}, 3000);`
+	}
+});
+
+// 	setTimeout(function () {
+// 		const loadItem = document.querySelector(".loading");
+// 		setTimeout(function () {
+// 			document.documentElement.classList.add('loaded');
+// 		}, 1000);
+// 		if (!loadItem.classList.contains('done')) {
+// 			loadItem.classList.add('done');
+// 		}
+// 	}, 1000);
+// }
