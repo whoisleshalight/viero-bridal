@@ -1,10 +1,10 @@
 .loaded {
-	.loading {
+	.loader {
 		opacity: 0;
 		visibility: hidden;
 	}
 }
-.loading {
+.loader {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -59,10 +59,10 @@
 		filter: blur(4px);
 	}
 }
-.loading {
+.loader {
 	transition: all 0.4s ease 0s;
 }
-.loading.done {
+.loader.done {
 	opacity: 0;
 	visibility: hidden;
 }

@@ -179,10 +179,8 @@ document.documentElement.classList.add('lock');
 document.addEventListener("DOMContentLoaded", (event) => {
 	const loader = document.querySelector('#page-preloader');
 	if (loader) {
-		setTimeout(() => {
 			loader.classList.add('done')
 			document.documentElement.classList.remove('lock')
-		}, 3000);
 	}
 });
 
